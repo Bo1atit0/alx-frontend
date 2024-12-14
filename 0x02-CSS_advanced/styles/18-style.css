@@ -51,6 +51,7 @@ html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}main{display:b
     --nav-item-letter-spacing: 4%;
     --nav-item-display: inline-block;
     --nav-item-margin: 0 0 3rem 0;
+    --nav-item-link-hover: var(--color-primary);
 }
 
 *, *:before, *:after{
@@ -70,6 +71,9 @@ body{
     line-height: var(--line-height-base);
 }
 
+.navbar-menu{
+    float: right;
+}
 .nav{
     margin: 0;
     padding: 0;
@@ -78,7 +82,21 @@ body{
 }
 
 .nav .nav-item{
-    font-family: ;
+    font-family: var(--nav-item-font-family);
+    font-weight: var(--nav-item-font-weight);
+    font-size: var(--nav-item-font-size);
+    letter-spacing: var(--nav-item-letter-spacing);
+    display: var(--nav-item-display);
+    margin: var(--nav-item-margin);
+}
+
+.nav-link{
+    display: block;
+    padding: 0.5rem 1rem;
+}
+
+.nav-link:hover{
+    color: var(--nav-item-link-hover);
 }
 
 h1,h2,h3,h4,h5,h6{
