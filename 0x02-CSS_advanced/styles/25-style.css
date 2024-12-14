@@ -135,6 +135,7 @@ a:active{
     border: var(--button-border);
     color: var(--button-color);
     text-decoration: var(--button-text-decoration);
+    font-size: var(--button-font-size);
 }
 
 .button:hover{
